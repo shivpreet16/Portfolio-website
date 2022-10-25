@@ -58,8 +58,9 @@ const Header = (props: Props) => {
                     }}
                 >
                     <SocialIcon
+                        url='#about'
                         network='email'
-                        className="cursor-pointer"
+                        className="cursor-none"
                         fgColor='grey'
                         bgColor='transparent'
                     />

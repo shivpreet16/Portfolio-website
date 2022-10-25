@@ -8,6 +8,7 @@ import {
   faUser,
   faLaptopCode,
   faGears,
+  faDiagramProject
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -33,8 +34,9 @@ const Sidebar = (props: Props) => {
         }}
       >
         <Link href="#hero">
-          <button className="cursor-none button relative z-20 h-auto w-[60%]">
+          <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
             <FontAwesomeIcon icon={faHome} color="white" />
+            <span className="uppercase text-[9px] pt-1 hover:text-gray-300">home</span>
           </button>
         </Link>
         <Link href="#about">
@@ -50,6 +52,11 @@ const Sidebar = (props: Props) => {
         <Link href="#skills">
           <button className="cursor-none button relative z-20 h-auto w-[60%]">
             <FontAwesomeIcon icon={faGears} color="white" />
+          </button>
+        </Link>
+        <Link href="#project">
+          <button className="cursor-none button relative z-20 h-auto w-[60%]">
+            <FontAwesomeIcon icon={faDiagramProject} color="white" />
           </button>
         </Link>
       </motion.div>
