@@ -10,6 +10,7 @@ const Experience = (props: Props) => {
       initial={{ y:-200,opacity: 0 }}
       whileInView={{ y:0,opacity: 1 }}
       transition={{ duration: 1.5, delay: 0.5 }}
+      viewport={{once: true}}
     className='h-screen flex flex-col relative overflow-hidden md:flex-row max-w-full justify-evenly mx-auto items-center'>
         <h3 className="absolute uppercase top-20 md:top-11 tracking-[24px] text-gray-500 text-2xl">
         Experience
