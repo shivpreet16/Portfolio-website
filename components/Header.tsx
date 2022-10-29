@@ -58,7 +58,7 @@ const Header = (props: Props) => {
                     }}
                 >
                     <SocialIcon
-                        url='#about'
+                        url='#contact'
                         network='email'
                         className="cursor-none"
                         fgColor='grey'

@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
   * {
     @apply scroll-smooth;
   }
+  .contactInput{
+    @apply outline-none bg-slate-400/10 rounded-md border-b px-3 md:px-6 py-4 border-[#242424] cursor-none text-gray-500 placeholder:text-gray-500 transition-all focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/80 hover:border-[#f7ab0a]/40
+  }
+}
+
+::selection {
+  color: white;
+  background: rgb(122, 122, 122);
 }

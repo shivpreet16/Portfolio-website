@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from 'react'
 import Skills from '../components/Skills'
 import Experience from '../components/Experience'
+import Contact from '../components/Contact'
 
 const Home: NextPage = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -88,9 +89,12 @@ const Home: NextPage = () => {
 
 
       {/* projects */}
-
+      
 
       {/* contact me */}
+      <section id="contact" className='snap-center'>
+        <Contact />
+      </section>
     </div>
 
 
