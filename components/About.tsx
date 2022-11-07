@@ -72,7 +72,7 @@ const About = (props: Props) => {
     stiffness: 100,
     delay:0.1
   }}
-  className="w-full absolute top-[30%] lg:top-[20%] bg-[#f7ab0a]/10 h-[500px] -skew-y-12"/>
+  className="w-full absolute top-[35%] lg:top-[20%] bg-[#f7ab0a]/10 h-[300px] md:h-[500px] -skew-y-12"/>
     </div>
   );
 };
