@@ -1,30 +1,29 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+type Props = {};
 
-type Props = {}
-
-const ExperienceCard = (props: Props) => {
+const ExperienceCard = (props: any) => {
   return (
- 
-    <article className='flex flex-col rounded-lg items-centers flex-shrink-0 h-[70vh] w-[400px] md:w-[600px] xl:w-[900px] snap-center  bg-[#292929] p-10 hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden'>
-        <img src="../assets/img.jpg" alt="" className='h-32 w-32 rounded-full'/>
-        <div className='px-0 md:px-10'>
-            <h4 className='text-4xl font-light'>Intern at CliqMetrics</h4>
-            <div className='font-bold text-2xl my-2'>
-                {/* tech used */}
-                {/* tech used */}
-                {/* tech used */}
-            </div>
-            <p className='uppercase py-5 text-gray-300'>started...-Ended...</p>
-
-            <ul className='list-disc space-y-4 ml-5 text-lg'>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-            </ul>
+    <article className="flex flex-col rounded-lg items-centers flex-shrink-0 h-[70vh] w-[400px] md:w-[600px] xl:w-[900px] snap-center  bg-[#292929] p-10 hover:opacity-100 opacity-40 items-center text-justify transition-opacity duration-200 overflow-hidden">
+      <div className="px-0 md:px-10">
+        <h4 className="text-4xl font-light">{props.title}</h4>
+        <div className="font-bold text-2xl my-2">
+          {props.techs.map((tech: any) => (
+            <span className="pr-5">{tech}</span>
+          ))}
         </div>
-    </article>
-  )
-}
+        <p className="uppercase py-5 text-gray-300">
+          {props.startDate} - {props.endDate}
+        </p>
 
-export default ExperienceCard
+        <ul className="list-none space-y-4 ml-5 text-lg">
+          {props.works.map((work: any) => (
+            <li>{work}</li>
+          ))}
+        </ul>
+      </div>
+    </article>
+  );
+};
+
+export default ExperienceCard;
