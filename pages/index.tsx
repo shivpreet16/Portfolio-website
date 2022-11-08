@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     };
   }, []);
 
-  const variants = {
+  const variants:any = {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,

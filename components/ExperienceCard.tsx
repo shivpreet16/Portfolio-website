@@ -16,7 +16,7 @@ const ExperienceCard = (props: any) => {
           {props.startDate} - {props.endDate}
         </p>
 
-        <ul className="list-none space-y-4 ml-5 text-lg">
+        <ul className="list-none flex flex-col space-y-4 ml-5 text-lg">
           {props.works.map((work: any) => (
             <li>{work}</li>
           ))}

@@ -8,7 +8,7 @@ const Experience = () => {
     techs: ["GoLang", "GCP", "PostgreSQL"],
     startDate: "1/09/2022",
     endDate: "present",
-    works: ["I began interning at Cliqmetrics in September 2022.","It is a startup that provides click analytics and marketng automation tool."],
+    works: ["Marketing automation tool.","Database Management","Backend"],
   };
   let props2 = {
     title: "GDSC KIIT ML team",
@@ -16,6 +16,13 @@ const Experience = () => {
     startDate: "1/08/2022",
     endDate: "present",
     works: ["PyTorch", "Tensorflow", "SciKit Learn"],
+  };
+  let props3 = {
+    title: "More to come",
+    techs: ["Dev working on it."],
+    startDate: "present",
+    endDate: "present",
+    works: ["Full Stack", "ML", "Blockchain"],
   };
   return (
     <motion.div
@@ -31,6 +38,7 @@ const Experience = () => {
       <div className="w-full flex hover:scrollbar-thumb-[#303030b0] scrollbar-track-slate-400 scrollbar-thumb-[#5e5e5e8c] scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full absolute top-24 space-x-5 overflow-x-scroll scroll whitespace-nowrap scroll-smooth p-10 snap-x snap-mandatory">
         <ExperienceCard {...props1} />
         <ExperienceCard {...props2} />
+        <ExperienceCard {...props3} />
       </div>
     </motion.div>
   );

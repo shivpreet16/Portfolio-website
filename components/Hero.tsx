@@ -5,9 +5,11 @@ import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import img from "../assets/img.jpg";
 
-type Props = {};
+type Props = {
+  setCursorVariant:any
+};
 
-const Hero = ({ setCursorVariant }: Function) => {
+const Hero = ({ setCursorVariant }:Props) => {
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
 

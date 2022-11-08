@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import img from "../assets/ken.jpg";
+import img from "../assets/img.jpg";
 import Image from "next/image";
 
 type Props = {};
@@ -37,7 +37,7 @@ const About = (props: Props) => {
           className="mb-20 md:mb-0 relative left-16 hidden flex-shrink-0 w-56 h-56 md:w-64 md:h-95 md:block"
         >
           <Image
-            src=""
+            src={img}
             height={200}
             width={200}
             className="rounded-full md:rounded-lg object-cover"
