@@ -1,7 +1,8 @@
+/* eslint-disable */ 
+
 import React from "react";
 import Image from "next/image";
 import img from "../assets/img.jpg";
-type Props = {};
 
 const ExperienceCard = (props: any) => {
   return (
@@ -10,7 +11,7 @@ const ExperienceCard = (props: any) => {
         <div className="px-0 md:px-10">
           <div className="w-[100%] flex justify-center mb-7">
             <Image src={img} height={100} width={100} 
-            className="rounded-full"/>
+            className="rounded-full" alt='image'/>
           </div>
           <h4 className="text-4xl font-light">{props.title}</h4>
           <div className="font-bold text-2xl my-2">

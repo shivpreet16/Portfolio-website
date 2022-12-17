@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
