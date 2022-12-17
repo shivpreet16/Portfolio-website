@@ -35,13 +35,13 @@ const Contact = (props: Props) => {
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
           Contact Me
         </h3>
-        <h4 className="top-40 absolute mt-2 md:mt-7 lg:mt-10 flex tracking-[2px] text-sm flex-col md:flex-row text-gray-300 md:text-xl">
+        <h4 className="top-40 absolute mt-2 md:mt-7 mb-4 lg:mt-0 flex tracking-[2px] text-sm flex-col md:flex-row text-gray-300 md:text-xl">
           Did I get your attention?
           <span className="ml-[2px] text-[#f7ab0a] flex">
             Get in touch.
           </span>
         </h4>
-        <div className="absolute top-72 flex md:mt-20 lg:mt-24 flex-col items-center lg:flex-row lg:space-x-96 scale-90 md:scale-110 lg:scale-100">
+        <div className="absolute top-64 flex flex-col items-center lg:flex-row lg:space-x-44 scale-90 md:scale-110 lg:scale-100">
           <div className=" text-[#f7ab0a] flex flex-col justify-center items-center lg:items-baseline">
             <motion.div
               drag
@@ -78,7 +78,7 @@ const Contact = (props: Props) => {
           </div>
           <form
             onSubmit={onSubmit}
-            className="flex flex-col space-y-2 mt-4 md:mt-40 lg:mt-4 lg:ml-12 w-fit mx-auto scale-90 md:scale-125"
+            className="flex flex-col space-y-2 mt-4 md:mt-40 lg:mt-0 lg:ml-0 w-fit mx-auto scale-90 md:scale-100"
           >
             <div className="flex space-x-2">
               <input

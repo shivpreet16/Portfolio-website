@@ -52,7 +52,7 @@ const About = (props: Props) => {
             I am currently working as a Backend Engineer at CliqMetrics. I am
             pursuing BTech. (2021-2025) at KIIT, Bhubaneshwar in Computer
             Science and Engineering. I am also a part of the ML Team at GDSC
-            KIIT. Math as intrigued me from a young and in 11th Computer Sience
+            KIIT. Math has intrigued me from a young and in 11th Computer Sience
             found a soft spot in my heart. I started programming when I was in
             8th grade. Most of my experience has been with Web Dev and ML. I am
             currently focusing on full-stack development and I am aiming to move
@@ -72,7 +72,7 @@ const About = (props: Props) => {
     stiffness: 100,
     delay:0.1
   }}
-  className="w-full absolute top-[35%] lg:top-[20%] bg-[#f7ab0a]/10 h-[300px] md:h-[500px] -skew-y-12"/>
+  className="w-full absolute top-[35%] lg:top-[20%] bg-[#f7ab0a]/10 h-[300px] md:h-[60vh] -skew-y-12"/>
     </div>
   );
 };

@@ -56,7 +56,7 @@ const Home: NextPage = () => {
       <motion.div
         animate={cursorVariant}
         variants={variants}
-        className="z-30 hidden lg:block bg-black h-[32px] w-[32px] rounded-full fixed t-0 l-0 pointer-events-none"
+        className="z-30 hidden lg:block bg-[#8a8a8a] h-[32px] w-[32px] rounded-full fixed t-0 l-0 pointer-events-none"
       />
       <Head>
         <title>Shivpreet's Portfolio</title>
@@ -80,6 +80,8 @@ const Home: NextPage = () => {
       <section id="experience" className="snap-center">
         <Experience />
       </section>
+
+
 
       {/* skills */}
       <section id="skills" className="snap-start">

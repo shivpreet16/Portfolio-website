@@ -44,7 +44,7 @@ const Skills = (props: Props) => {
         This is evergrowing!
       </motion.h3>
 
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-9 lg:gap-11 absolute top-48 md:top-72">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-9 lg:gap-11 absolute top-48">
         <Skill img={html} directionLeft={true}/>
         <Skill img={css} directionLeft={true}/>
         <Skill img={js} directionLeft={false}/>
