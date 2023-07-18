@@ -8,7 +8,7 @@ const ExperienceCard = (props: any) => {
   return (
     <div>
       <article className="flex flex-col rounded-lg items-centers flex-shrink-0 h-[70vh] w-[400px] md:w-[600px] xl:w-[900px] snap-center  bg-[#292929] p-10 hover:opacity-100 opacity-40 items-center text-justify transition-opacity duration-200 overflow-hidden">
-        <div className="px-0 md:px-10">
+        <div className="px-0 md:px-10 lg:scale-75">
           <div className="w-[100%] flex justify-center mb-7">
             <Image src={img} height={100} width={100} 
             className="rounded-full" alt='image'/>

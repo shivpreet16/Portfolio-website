@@ -7,7 +7,7 @@ const Experience = () => {
     title: "Intern at Cliqmetrics",
     techs: ["GoLang", "GCP", "PostgreSQL"],
     startDate: "1/09/2022",
-    endDate: "present",
+    endDate: "1/02/2023",
     works: ["Marketing automation tool.","Database Management","Backend"],
   };
   let props2 = {
@@ -18,6 +18,13 @@ const Experience = () => {
     works: ["PyTorch", "Tensorflow", "SciKit Learn"],
   };
   let props3 = {
+    title: "Intern at CSIR-4PI (NAL Belur)",
+    techs: ["Python, Linux"],
+    startDate: "16/05/2023",
+    endDate: "29/06/2023",
+    works: ["Keras", "Tensorflow", "Generative Adversarial Networks"],
+  };
+  let props4 = {
     title: "More to come",
     techs: ["Dev working on it."],
     startDate: "present",
@@ -39,6 +46,7 @@ const Experience = () => {
         <ExperienceCard {...props1} />
         <ExperienceCard {...props2} />
         <ExperienceCard {...props3} />
+        <ExperienceCard {...props4} />
       </div>
     </motion.div>
   );
