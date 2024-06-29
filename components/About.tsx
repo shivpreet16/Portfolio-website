@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import img from "../assets/img.jpg";
 import Image from "next/image";
-
+import { about } from "../assets/_constants";
 type Props = {};
 
 const About = (props: Props) => {
@@ -49,14 +49,7 @@ const About = (props: Props) => {
             Wondering who am I?
           </h4>
           <p className="text-[1em] md:text-[0.9em] mt-2 text-justify">
-            I am currently working as a Backend Engineer at CliqMetrics. I am
-            pursuing BTech. (2021-2025) at KIIT, Bhubaneshwar in Computer
-            Science and Engineering. I am also a part of the ML Team at GDSC
-            KIIT. Math has intrigued me from a young and in 11th Computer Sience
-            found a soft spot in my heart. I started programming when I was in
-            8th grade. Most of my experience has been with Web Dev and ML. I am
-            currently focusing on full-stack development and I am aiming to move
-            towards blockchain.
+            {about}
           </p>
         </div>
       </motion.div>

@@ -24,14 +24,17 @@ const Experience = () => {
       </h3>
 
       <div className="w-full flex hover:scrollbar-thumb-[#303030b0] scrollbar-track-slate-400 scrollbar-thumb-[#5e5e5e8c] scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full absolute top-24 space-x-5 overflow-x-scroll scroll whitespace-nowrap scroll-smooth p-10 xl:pl-20 snap-x snap-mandatory ">
-        {experiences.map((experience: Exp) => (
-          <ExperienceCard 
-            key={experience.title} // Assuming 'title' is unique enough for a key
+        {experiences.map((experience: Exp, index: number) => (
+          <ExperienceCard
+            key={experience.title} 
             title={experience.title}
             techs={experience.techs}
             startDate={experience.startDate}
             endDate={experience.endDate}
             works={experience.works}
+            left={index!=0?true:false}
+            right={index!=experiences.length-1?true:false}
+            
           />
         ))}
       </div>

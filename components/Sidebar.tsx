@@ -52,16 +52,16 @@ const Sidebar = (props: Props) => {
             <FontAwesomeIcon icon={faLaptopCode} color="white" />
           </button>
         </Link>
+        <Link href="#project">
+          <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
+            <FontAwesomeIcon icon={faDiagramProject} color="white" />
+          </button>
+        </Link>
         <Link href="#skills">
           <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
             <FontAwesomeIcon icon={faGears} color="white" />
           </button>
         </Link>
-        {/* <Link href="#project">
-          <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
-            <FontAwesomeIcon icon={faDiagramProject} color="white" />
-          </button>
-        </Link> */}
       </motion.div>
     </nav>
   );

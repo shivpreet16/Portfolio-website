@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
+import Projects from "../components/Projects"
 
 const Home: NextPage = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -84,13 +85,17 @@ const Home: NextPage = () => {
       </section>
 
 
+      {/* projects */}
+      <section id="project" className="snap-start">
+        <Projects />
+      </section>
 
       {/* skills */}
       <section id="skills" className="snap-start">
         <Skills />
       </section>
 
-      {/* projects */}
+      
 
       {/* contact me */}
       <section id="contact" className="snap-center">
