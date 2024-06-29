@@ -41,16 +41,17 @@ const Home: NextPage = () => {
       y: mousePosition.y - 75,
       height: 150,
       width: 150,
-      backgroundColor: "white",
+      backgroundColor: "rgb(255, 255, 255)",  // Changed from "white" to "rgb(255, 255, 255)"
       mixBlendMode: "difference",
     },
     image: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
-      backgroundColor: "white",
+      backgroundColor: "rgb(255, 255, 255)",  // Changed from "white" to "rgb(255, 255, 255)"
       mixBlendMode: "difference",
     },
   };
+  
 
   return (
     <div className="cursor-none overflow-y-scroll overflow-x-hidden bg-[rgb(36,36,36)] text-white h-screen snap-y hover:scrollbar-thumb-[#303030b0] snap-mandatory overflow-scroll z-0 scrollbar-track-slate-400 scrollbar-thumb-[#5e5e5e8c] scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full">

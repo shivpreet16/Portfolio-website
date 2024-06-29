@@ -1,36 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
+import { experiences } from "../assets/_constants";
+
+interface Exp {
+  title: string;
+  techs: string[];
+  startDate: string;
+  endDate: string;
+  works: string[];
+}
 
 const Experience = () => {
-  let props1 = {
-    title: "Intern at Cliqmetrics",
-    techs: ["GoLang", "GCP", "PostgreSQL"],
-    startDate: "1/09/2022",
-    endDate: "1/02/2023",
-    works: ["Marketing automation tool.","Database Management","Backend"],
-  };
-  let props2 = {
-    title: "GDSC KIIT ML team",
-    techs: ["Python"],
-    startDate: "1/08/2022",
-    endDate: "present",
-    works: ["PyTorch", "Tensorflow", "SciKit Learn"],
-  };
-  let props3 = {
-    title: "Intern at CSIR-4PI (NAL Belur)",
-    techs: ["Python, Linux"],
-    startDate: "16/05/2023",
-    endDate: "29/06/2023",
-    works: ["Keras", "Tensorflow", "Generative Adversarial Networks"],
-  };
-  let props4 = {
-    title: "More to come",
-    techs: ["Dev working on it."],
-    startDate: "present",
-    endDate: "present",
-    works: ["Full Stack", "ML", "Blockchain"],
-  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,11 +23,17 @@ const Experience = () => {
         Experience
       </h3>
 
-      <div className="w-full flex hover:scrollbar-thumb-[#303030b0] scrollbar-track-slate-400 scrollbar-thumb-[#5e5e5e8c] scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full absolute top-24 space-x-5 overflow-x-scroll scroll whitespace-nowrap scroll-smooth p-10 snap-x snap-mandatory">
-        <ExperienceCard {...props1} />
-        <ExperienceCard {...props2} />
-        <ExperienceCard {...props3} />
-        <ExperienceCard {...props4} />
+      <div className="w-full flex hover:scrollbar-thumb-[#303030b0] scrollbar-track-slate-400 scrollbar-thumb-[#5e5e5e8c] scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full absolute top-24 space-x-5 overflow-x-scroll scroll whitespace-nowrap scroll-smooth p-10 xl:pl-20 snap-x snap-mandatory ">
+        {experiences.map((experience: Exp) => (
+          <ExperienceCard 
+            key={experience.title} // Assuming 'title' is unique enough for a key
+            title={experience.title}
+            techs={experience.techs}
+            startDate={experience.startDate}
+            endDate={experience.endDate}
+            works={experience.works}
+          />
+        ))}
       </div>
     </motion.div>
   );
