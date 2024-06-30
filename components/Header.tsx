@@ -27,17 +27,17 @@ const Header = (props: Props) => {
                     {/* social icons */}
 
                     <SocialIcon
-                        url="https://instagram.com"
+                        url="https://instagram.com/shivpreet_16"
                         fgColor='grey'
                         bgColor='transparent'
                     />
                     <SocialIcon
-                        url="https://github.com"
+                        url="https://github.com/shivpreet16"
                         fgColor='grey'
                         bgColor='transparent'
                     />
                     <SocialIcon
-                        url="https://linkedin.com"
+                        url="https://linkedin.comin/shivpreet-padhi"
                         fgColor='grey'
                         bgColor='transparent'
                     />

@@ -15,17 +15,6 @@ const Hero = ({ setCursorVariant }:Props) => {
 
   const imgEnter = () => setCursorVariant("image");
   const imgLeave = () => setCursorVariant("default");
-  // const [text, count] = useTypewriter({
-  //     words: [
-  //         "Hi, The name's Shivpreet",
-  //         "<Coder />",
-  //         "<Anime weeb />",
-  //         "<Coffee maniac />",
-  //         "<Artist for fun/>",
-  //     ],
-  //     loop: true,
-  //     delaySpeed: 2000,
-  // })
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
@@ -49,6 +38,7 @@ const Hero = ({ setCursorVariant }:Props) => {
               options={{
                 strings: ["Hi, The name's Shivpreet",
                 "< Coder />",
+                "< Code For Good '24 - Finalist />",
                 "< Anime weeb />",
                 "< Coffee maniac />",
                 "< Artist for fun />",],

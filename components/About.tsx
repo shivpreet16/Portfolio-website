@@ -15,7 +15,7 @@ const About = (props: Props) => {
         transition={{ duration: 1.5, delay: 0.5 }}
         className="bground h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
       >
-        <motion.h3 
+        <motion.h3
           drag
           dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           dragConstraints={{ left: 10, right: 10, top: 0, bottom: 0 }}
@@ -46,30 +46,37 @@ const About = (props: Props) => {
           />
         </motion.div>
         <div className="space-y-10 px-0 md:px-10">
-          {/* <h4 className="text-2xl md:text-4xl font-semibold tracking-[2px] mt-4">
-            Wondering who am I?
-          </h4> */}
           <p className="text-[1em] md:text-[0.9em] mt-2 text-justify">
             {about.split("\n\n").map((paragraph, index) => (
               <React.Fragment key={index}>
                 {paragraph}
-                <br /><br />
+                <br />
+                <br />
               </React.Fragment>
             ))}
           </p>
+          <p>
+            View my resume{" "}
+            <a href="https://drive.google.com/file/d/1-mebSMY1e1gq_hU3q8xlZTon9ns7XJoA/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-10 underline hover:text-slate-300 cursor-pointer">
+              Here
+            </a>
+          </p>
         </div>
       </motion.div>
-      <motion.div 
+      <motion.div
         initial={{
-          skewY:0,
+          skewY: 0,
         }}
         whileInView={{
-          skewY:-10,
+          skewY: -10,
         }}
         transition={{
-          type:"spring",
+          type: "spring",
           stiffness: 100,
-          delay:0.1
+          delay: 0.1,
         }}
         className="w-full absolute top-[35%] lg:top-[20%] bg-[#f7ab0a]/10 h-[300px] md:h-[60vh] -skew-y-12"
       />
