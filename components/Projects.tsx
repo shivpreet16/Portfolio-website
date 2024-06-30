@@ -54,7 +54,7 @@ const Projects = (props: Props) => {
           skewY: 0,
         }}
         whileInView={{
-          skewY: -10,
+          skewY: 10,
         }}
         transition={{
           type: "spring",

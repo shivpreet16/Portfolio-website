@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../assets/img.jpg";
+import img from "../assets/aboutpfp.jpg";
 import Image from "next/image";
 import { about } from "../assets/_constants";
 

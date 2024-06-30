@@ -3,7 +3,7 @@ import React from "react";
 import BackgroundCircles from "./BackgroundCircles";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-import img from "../assets/img.jpg";
+import img from "../assets/pfp.svg";
 
 type Props = {
   setCursorVariant:any
@@ -35,8 +35,8 @@ const Hero = ({ setCursorVariant }:Props) => {
         onMouseLeave={imgLeave}
         src={img}
         alt="Shivpreet"
-        height={102}
-        width={102}
+        height={130}
+        width={130}
         className="relative rounded-full mx-auto"
       />
       <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="z-20">

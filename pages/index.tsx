@@ -85,16 +85,16 @@ const Home: NextPage = () => {
         <Experience />
       </section>
 
+      {/* achievements */}
+      <section id="achievements" className="snap-start">
+        <Achievements />
+      </section>
 
       {/* projects */}
       <section id="project" className="snap-start">
         <Projects />
       </section>
       
-      {/* achievements */}
-      <section id="achievements" className="snap-start">
-        <Achievements />
-      </section>
 
       {/* skills */}
       <section id="skills" className="snap-start">

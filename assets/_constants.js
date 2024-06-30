@@ -1,10 +1,19 @@
-export const experiences = [
+const exp = [
+  {
+    title: "More to come",
+    techs: ["Dev working on it."],
+    startDate: "Present",
+    endDate: "Future",
+    works: ["Full Stack", "ML", "Blockchain"],
+    imgUrl:""
+  },
   {
     title: "Intern at Cliqmetrics",
     techs: ["GoLang", "GCP", "PostgreSQL"],
     startDate: "09/2022",
     endDate: "02/2023",
     works: ["Marketing automation tool.", "Database Management", "Backend"],
+    imgUrl:""
   },
   {
     title: "GDSC KIIT ML team",
@@ -12,17 +21,19 @@ export const experiences = [
     startDate: "08/2022",
     endDate: "08/2025",
     works: ["PyTorch", "Tensorflow", "SciKit Learn"],
+    imgUrl:"/gdsc.svg"
   },
   {
     title: "Intern at CSIR-4PI (NAL Belur)",
-    techs: ["Python, Linux"],
+    techs: ["Python", "Linux"],
     startDate: "05/2023",
     endDate: "07/2023",
     works: ["Keras", "Tensorflow", "Generative Adversarial Networks"],
+    imgUrl:"/csir.svg"
   },
   {
     title: "Research Intern at IIT, Bhubaneswar",
-    techs: ["Python, Linux"],
+    techs: ["Python","Linux"],
     startDate: "05/2024",
     endDate: "29/06/2024",
     works: [
@@ -31,15 +42,11 @@ export const experiences = [
       "Active Speaker Detection",
       "Flask Server",
     ],
-  },
-  {
-    title: "More to come",
-    techs: ["Dev working on it."],
-    startDate: "Present",
-    endDate: "Future",
-    works: ["Full Stack", "ML", "Blockchain"],
+    imgUrl:"/iit-bbsr.svg"
   },
 ];
+
+export const experiences=exp.reverse()
 
 export const about =
   "Hey there! I'm Shivpreet, currently navigating through my Computer Science journey at Kalinga Institute of Industrial Technology, where I'm not just about acing exams with a stellar 9.51 CGPA, but also about squeezing every drop of fun out of life. I'm a fervent video gamer, an enthusiastic badminton player, an avid skater, a chess strategist, and sometimes, a sketch artist (check out my artwork on Instagram for some shameless self-promotion).\n\nMy idea of a good time includes cracking jokes in the tensest moments and watching stand-up comedy — laughter really is the best medicine (sometimes poison in situations where you really don't need to joke)! I love diving into random discussions that have absolutely nothing to do with my career or life goals; it's all about learning and satisfying my curiosity. So, if you're up for a chat about the quirkiest of topics or need a partner to explore new ideas, count me in. Let’s connect and share a laugh or maybe discover something new together!";
@@ -111,20 +118,20 @@ export const projects = [
   },
 ];
 
-export const achievments=[
+export const achievments = [
   {
-    imgUrl:"/cfg.svg",
-    title:"Finalist - Code For Good '24, JPMC",
-    width:150
+    imgUrl: "/cfg.svg",
+    title: "Finalist - Code For Good '24, JPMC",
+    width: 150,
   },
   {
-    imgUrl:"/research-award.png",
-    title:"Best Research Forum Award",
-    width:100
+    imgUrl: "/research-award.png",
+    title: "Best Research Forum Award",
+    width: 100,
   },
   {
-    imgUrl:"/ieee.png",
-    title:"Presented IoT Paper",
-    width:200
+    imgUrl: "/ieee.png",
+    title: "Presented IoT Paper",
+    width: 200,
   },
-]
+];

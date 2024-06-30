@@ -9,6 +9,7 @@ interface Exp {
   startDate: string;
   endDate: string;
   works: string[];
+  imgUrl:string;
 }
 
 const Experience = () => {
@@ -34,6 +35,7 @@ const Experience = () => {
             works={experience.works}
             left={index!=0?true:false}
             right={index!=experiences.length-1?true:false}
+            imgUrl={experience.imgUrl}
             
           />
         ))}

@@ -17,6 +17,7 @@ interface Props {
   works: string[];
   left: boolean;
   right: boolean;
+  imgUrl:string;
 }
 
 const ExperienceCard = (props: Props) => {
@@ -26,7 +27,7 @@ const ExperienceCard = (props: Props) => {
         <div className="px-0 md:px-10 lg:scale-75">
           <div className="w-[100%] flex justify-center mb-7">
             <Image
-              src={img}
+              src={props.imgUrl||img}
               height={100}
               width={100}
               className="rounded-full"

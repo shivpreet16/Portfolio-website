@@ -9,6 +9,7 @@ import {
   faLaptopCode,
   faGears,
   faDiagramProject,
+  faAward
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -50,6 +51,11 @@ const Sidebar = (props: Props) => {
         <Link href="#experience">
           <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
             <FontAwesomeIcon icon={faLaptopCode} color="white" />
+          </button>
+        </Link>
+        <Link href="#achievements">
+          <button className="cursor-none button relative flex flex-col justify-center items-center z-20 h-auto w-[60%]">
+            <FontAwesomeIcon icon={faAward} color="white" />
           </button>
         </Link>
         <Link href="#project">
