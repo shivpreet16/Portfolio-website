@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
+        transition={{ duration: 1, delay: 0 }}
         className="bground h-screen w-full flex flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center"
       >
         <motion.h3

@@ -16,7 +16,7 @@ const Experience = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.5 }}
+      transition={{ duration: 1, delay: 0 }}
       className="h-screen flex flex-col relative overflow-hidden md:flex-row max-w-full justify-evenly mx-auto items-center"
     >
       <h3 className="absolute uppercase top-20 md:top-16 tracking-[24px] x-20 text-gray-500 text-2xl">
