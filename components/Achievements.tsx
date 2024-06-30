@@ -35,12 +35,9 @@ const Achievements = () => {
       </motion.h3>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-9 lg:gap-11 ">
-        {/* <Achievement img="/thirdeye_logo_black.svg" directionLeft={true} title="Best Research Forum Award"/>
-        <Achievement img="/thirdeye_logo_black.svg" directionLeft={false} title="Presented IoT Paper"/>
-        <Achievement img="/thirdeye_logo_black.svg" directionLeft={true} title="JPMC Hackathon Finalist"/>
-        <Achievement img="/thirdeye_logo_black.svg" directionLeft={false} title="Contributions to NGO"/> */}
         {achievments.map((achievement, index: number) => (
           <Achievement
+          key={index}
             img={achievement.imgUrl}
             directionLeft={index % 2 == 0 ? true : false}
             title={achievement.title}
