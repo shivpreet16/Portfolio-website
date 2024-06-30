@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import img from "../assets/img.jpg";
 import Image from "next/image";
-
-// Example about text structured with line breaks for multiple paragraphs
-const about = "Hello! I'm Shivpreet, a dedicated Computer Science student at Kalinga Institute of Industrial Technology, where I've maintained an exceptional CGPA of 9.51/10. My passion for emerging technologies has led me to delve into programming languages such as JavaScript, Python, GoLang, and frameworks like React.js, Next.js, and Flask.\n\nMy academic pursuits have been complemented by internships at prestigious institutions, where I've developed expertise in backend development, computer vision, deep learning, and data analytics. Currently, I'm exploring the cutting-edge fields of genetic algorithms and quantum computing. I was a finalist in the JPMC Code for Good 2024, contributing to robust software development for Room To Read NGO, enhancing their educational outreach initiatives.\n\nMy achievements include receiving the Best Award of Research Forum for 'Revolutionizing Talent Acquisition' and presenting a paper on 'IoT in Pisciculture' at an IEEE conference. My project portfolio includes 'ThirdEye', a decentralized video sharing platform that integrates blockchain and traditional web technologies, and 'Trade Hive', which utilizes LSTM models for stock price prediction. These projects highlight my ability to merge advanced machine learning algorithms with modern web solutions. I'm eager to collaborate and share insights into the dynamic world of technology!";
+import { about } from "../assets/_constants";
 
 type Props = {};
 

@@ -41,16 +41,10 @@ export const experiences = [
   },
 ];
 
-export const about =
-  `Welcome! I’m Shivpreet, a dedicated and innovative Computer Science student at Kalinga Institute of Industrial Technology, where I have maintained an exceptional CGPA of 9.51/10. My academic journey began at DAV Public School, achieving an impressive 92% aggregate in my 12th CBSE examinations.
+export const about = "Hey there! I'm Shivpreet, currently navigating through my Computer Science journey at Kalinga Institute of Industrial Technology, where I'm not just about acing exams with a stellar 9.51 CGPA, but also about squeezing every drop of fun out of life. I'm a fervent video gamer, an enthusiastic badminton player, an avid skater, a chess strategist, and sometimes, a sketch artist (check out my artwork on Instagram for some shameless self-promotion).\n\nMy idea of a good time includes cracking jokes in the tensest moments and watching stand-up comedy — laughter really is the best medicine (sometimes poison in situations where you really don't need to joke)! I love diving into random discussions that have absolutely nothing to do with my career or life goals; it's all about learning and satisfying my curiosity. So, if you're up for a chat about the quirkiest of topics or need a partner to explore new ideas, count me in. Let’s connect and share a laugh or maybe discover something new together!";
 
-Hello! I'm Shivpreet, a Computer Science student at Kalinga Institute of Industrial Technology, deeply interested in the practical applications of emerging technologies. My technical journey includes extensive work with programming languages such as JavaScript, Python, GoLang, and frameworks like React.js, Next.js, and Flask.
 
-I have hands-on experience in backend development, computer vision, deep learning, and data analytics through projects and internships at prestigious institutions. Currently, I'm delving into the realms of genetic algorithms and quantum computing, exploring how these frontier technologies can solve complex problems in innovative ways.
 
-My project portfolio features works like 'ThirdEye', a decentralized video sharing platform, and 'Trade Hive', a stock trading app utilizing LSTM for price prediction. Both projects exemplify my ability to integrate advanced machine learning algorithms with modern web technologies.
-
-Let’s connect to explore potential collaborations or just to share insights into the fascinating world of technology!`;
 
   export const projects = [
     {
