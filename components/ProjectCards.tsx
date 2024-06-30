@@ -18,6 +18,8 @@ interface Props {
   deployLink: string;
   left: boolean;
   right: boolean;
+  imgBg: boolean;
+  imgStyles: { width: string; height: string };
 }
 
 // const techStack = [
@@ -30,7 +32,6 @@ interface Props {
 // ]; // Example tech stack
 
 const ProjectCards = (props: Props) => {
-    // console.log(props.techs)
   const numberOfColumns = Math.ceil(props.techs.length / 4);
   return (
     <div className="relative">
@@ -40,9 +41,23 @@ const ProjectCards = (props: Props) => {
           <div className="h-full w-full grid md:grid-cols-2 md:gap-4">
             <div className="flex flex-col">
               <div className="justify-center items-center w-full h-1/2 hidden md:flex">
-                <div className="h-32 w-32 rounded-full bg-slate-400"></div>
+                <div
+                  style={{
+                    position: "relative",
+                    borderRadius: "50%",
+                    backgroundColor: props.imgBg ? "slategray" : "transparent",
+                    width: props.imgStyles.width,
+                    height: props.imgStyles.height,
+                  }}
+                >
+                  <Image
+                    src={props.imageUrl}
+                    layout="fill"
+                    style={{ position: "absolute" }}
+                  />
+                </div>
               </div>
-              <div className=" grid items-center justify-center">
+              <div className="grid items-center justify-center">
                 <p className="text-lg tracking-[5px] uppercase py-3">
                   Techs & Stack
                 </p>
@@ -52,7 +67,7 @@ const ProjectCards = (props: Props) => {
                     gridTemplateColumns: `repeat(${numberOfColumns}, 1fr)`,
                     listStyle: "circle",
                   }}
-                  className=" gap-x-10 gap-y-2 pt-3"
+                  className="gap-x-10 gap-y-2 pt-3"
                 >
                   {props.techs.map((tech, index) => (
                     <li
@@ -66,8 +81,8 @@ const ProjectCards = (props: Props) => {
                 </ul>
               </div>
             </div>
-            <div className="h-full ">
-              <div className="py-10 w-full h-4/6 flex flex-col items-center ">
+            <div className="h-full">
+              <div className="py-10 w-full h-5/6 flex flex-col items-center">
                 <p className="text-md tracking-[10px] uppercase">Description</p>
                 <div className="w-full h-full pt-4 overflow-auto flex justify-center">
                   <p className="text-sm whitespace-normal text-justify">
@@ -75,17 +90,18 @@ const ProjectCards = (props: Props) => {
                   </p>
                 </div>
               </div>
-              <div className="h-2/6 flex  justify-center items-center gap-4">
+              <div className="h-1/6 flex justify-center items-center gap-4">
                 <SocialIcon
                   url={`https://github.com/${props.githubLink}`}
                   fgColor="grey"
                   bgColor="transparent"
                 />
-                <p className="h-6 w-6 flex justify-center items-center opacity-50 cursor-pointer"
-                onClick={e=>{
-                    e.preventDefault()
+                <p
+                  className={`h-6 w-6 ${props.deployLink==='/404'?"hidden":"block"} flex justify-center items-center opacity-50 cursor-pointer`}
+                  onClick={(e) => {
+                    e.preventDefault();
                     window.location.href = props.deployLink;
-                }}
+                  }}
                 >
                   <FontAwesomeIcon icon={faLink} color="white" />
                 </p>

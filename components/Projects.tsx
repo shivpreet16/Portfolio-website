@@ -10,10 +10,11 @@ interface Project {
   description: string;
   githubLink: string;
   deployLink: string;
+  imgBg:boolean;
+  imgStyles: { width: string; height: string };
 }
 
 const Projects = (props: Props) => {
-    console.log(projects)
   return (
     <div className="h-screen relative">
       <motion.div
@@ -42,6 +43,8 @@ const Projects = (props: Props) => {
               deployLink={project.deployLink}
               left={index != 0 ? true : false}
               right={index != projects.length - 1 ? true : false}
+              imgBg={project.imgBg}
+              imgStyles={project.imgStyles}
             />
           ))}
         </div>

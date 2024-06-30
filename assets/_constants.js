@@ -42,56 +42,80 @@ export const experiences = [
 ];
 
 export const about =
-  "I am currently working as a Backend Engineer at CliqMetrics. I am pursuing BTech. (2021-2025) at KIIT, Bhubaneshwar in Computer Science and Engineering. I am also a part of the ML Team at GDSC KIIT. Math has intrigued me from a young and in 11th Computer Sience found a soft spot in my heart. I started programming when I was in 8th grade. Most of my experience has been with Web Dev and ML. I am currently focusing on full-stack development and I am aiming to move towards blockchain.";
+  `Welcome! I’m Shivpreet, a dedicated and innovative Computer Science student at Kalinga Institute of Industrial Technology, where I have maintained an exceptional CGPA of 9.51/10. My academic journey began at DAV Public School, achieving an impressive 92% aggregate in my 12th CBSE examinations.
 
-export const projects = [
-  {
-    title: "ThirdEye",
-    imageUrl: "",
-    techs: [
-      "React.js",
-      "Golang",
-      "Node.js",
-      "Python",
-      "Blockchain",
-      "Machine Learning",
-      "SQL",
-      "MongoDB",
-    ],
-    description: "",
-    githubLink: "Jayanti2919/ThirdEye",
-    deployLink: "/404",
-  },
-  {
-    title: "TradeHive",
-    imageUrl: "",
-    techs: ["NextJS", "MongoDB", "LSTM model", "Streamlit"],
-    description: "",
-    githubLink: "Samrat1507/Trade-Hive",
-    deployLink: "https://trade-hive.netlify.app/",
-  },
-  {
-    title: "Flappy AI",
-    imageUrl: "",
-    techs: ["PyGame", "NEAT", "Genetic Algorithms"],
-    description: "",
-    githubLink: "shivpreet16/flappy-bird-using-neat",
-    deployLink: "/404",
-  },
-  {
-    title: "Blowfish",
-    imageUrl: "",
-    techs: ["Flask", "Blowfish Cryptographic Algoritm", "MongoDB", "React.js"],
-    description: "",
-    githubLink: "shivpreet16/Blowfish",
-    deployLink: "/404",
-  },
-  {
-    title: "ArtLab",
-    imageUrl: "",
-    techs: ["React.js","Express.js", "MongoDB"],
-    description: "",
-    githubLink: "/Samrat1507/ArtLab/",
-    deployLink: "/404",
-  },
-];
+Hello! I'm Shivpreet, a Computer Science student at Kalinga Institute of Industrial Technology, deeply interested in the practical applications of emerging technologies. My technical journey includes extensive work with programming languages such as JavaScript, Python, GoLang, and frameworks like React.js, Next.js, and Flask.
+
+I have hands-on experience in backend development, computer vision, deep learning, and data analytics through projects and internships at prestigious institutions. Currently, I'm delving into the realms of genetic algorithms and quantum computing, exploring how these frontier technologies can solve complex problems in innovative ways.
+
+My project portfolio features works like 'ThirdEye', a decentralized video sharing platform, and 'Trade Hive', a stock trading app utilizing LSTM for price prediction. Both projects exemplify my ability to integrate advanced machine learning algorithms with modern web technologies.
+
+Let’s connect to explore potential collaborations or just to share insights into the fascinating world of technology!`;
+
+  export const projects = [
+    {
+      title: "ThirdEye",
+      imageUrl: "/thirdeye_logo_black.svg",
+      techs: [
+        "React.js",
+        "Golang",
+        "Node.js",
+        "Python",
+        "Blockchain",
+        "Machine Learning",
+        "SQL",
+        "MongoDB",
+      ],
+      description:
+        "ThirdEye emerges as a decentralized video-sharing solution, countering centralized platforms' profit-driven approaches. Utilizing blockchain, it prioritizes creator empowerment and user privacy. Through micropayments in its cryptocurrency (EYEs), ThirdEye ensures fair compensation for creators. ThirdEye has the potential to transform the landscape for creators and viewers alike.",
+      githubLink: "Jayanti2919/ThirdEye",
+      deployLink: "/404",
+      imgBg: true,
+      imgStyles: { width: "128px", height: "128px" },
+    },
+    {
+      title: "TradeHive",
+      imageUrl: "/trade_hive.svg",
+      techs: ["NextJS", "MongoDB", "LSTM model", "Streamlit"],
+      description:
+        "Trade Hive is a revolutionary stocks website that transforms trading. Connect with global traders through our chat feature and join a vibrant community. Get personalized guidance from experts to enhance your strategies. Stay ahead with our AI-powered trend prediction, providing real-time stock insights. Trade confidently and make informed decisions in the fast-paced finance world.",
+      githubLink: "Samrat1507/Trade-Hive",
+      deployLink: "https://trade-hive.netlify.app/",
+      imgBg: false,
+      imgStyles: { width: "112px", height: "112px" },
+    },
+    {
+      title: "Flappy AI",
+      imageUrl: "/bird1.png",
+      techs: ["PyGame", "NEAT", "Genetic Algorithms"],
+      description:
+        "Harnessing the power of the NEAT algorithm, this project focuses on training a model to master the Flappy Bird game. By utilizing neuroevolution techniques, the model learns through evolving neural networks, adapting strategies, and improving performance over time. This approach not only showcases the capabilities of NEAT but also highlights its potential in game AI development.",
+      githubLink: "shivpreet16/flappy-bird-using-neat",
+      deployLink: "/404",
+      imgBg: false,
+      imgStyles: { width: "96px", height: "96px" },
+    },
+    {
+      title: "Blowfish",
+      imageUrl: "/blowfish.png",
+      techs: ["Flask", "Blowfish Cryptographic Algorithm", "MongoDB", "React.js"],
+      description:
+        "This project implements the Blowfish algorithm from scratch to encrypt images for secure transmission. Featuring a Flask backend and React frontend, it ensures data integrity and confidentiality. The user-friendly interface demonstrates the effectiveness of Blowfish in real-world scenarios, emphasizing the importance of secure data transmission in modern web applications.",
+      githubLink: "shivpreet16/Blowfish",
+      deployLink: "/404",
+      imgBg: true,
+      imgStyles: { width: "128px", height: "128px" },
+    },
+    {
+      title: "ArtLab",
+      imageUrl: "/artlab.png",
+      techs: ["React.js", "Express.js", "MongoDB"],
+      description:
+        "Introducing ArtLab: The ultimate online haven for artists! Our platform is designed exclusively for the artistic community, offering a space to showcase, connect, and inspire. Share your artwork, engage with fellow artists, and immerse yourself in a supportive creative environment. Welcome to ArtLab, where artists thrive!",
+      githubLink: "Samrat1507/ArtLab/",
+      deployLink: "/404",
+      imgBg: false,
+      imgStyles: { width: "192px", height: "200px" },
+    },
+  ];
+  
